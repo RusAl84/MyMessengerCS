@@ -6,7 +6,9 @@ namespace ConsoleMessenger
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("Hello World!");
+      Message msg = new Message("Rusal","Privet", DateTime.UtcNow);
+
+
     }
   }
 }
