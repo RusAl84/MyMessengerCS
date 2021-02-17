@@ -11,7 +11,8 @@ namespace ConsoleMessenger
     {
       Message msg = new Message("Rusal","Privet", DateTime.UtcNow);
       string output = JsonConvert.SerializeObject(msg);
-      Message deserializedProduct = JsonConvert.DeserializeObject<Message>(output);
+      Message deserializedMsg = JsonConvert.DeserializeObject<Message>(output);
+      Console.WriteLine(deserializedMsg);
 
     }
   }

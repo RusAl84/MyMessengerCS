@@ -7,9 +7,9 @@ namespace ConsoleMessenger
   [Serializable]
   class Message
   {
-    string UserName;
-    string MessageText;
-    DateTime TimeStamp;
+    public string UserName;
+    public string MessageText;
+    public DateTime TimeStamp;
 
     public Message(string userName, string messageText, DateTime timeStamp)
     {
@@ -20,7 +20,7 @@ namespace ConsoleMessenger
 
     public override string ToString()
     {
-      string output = String.Format("{UserName}  {MessageText} {TimeStamp}");
+      string output = String.Format("{0} {1} {2}", UserName, MessageText, TimeStamp);
       return output;
     }
   }
