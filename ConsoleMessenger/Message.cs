@@ -17,5 +17,11 @@ namespace ConsoleMessenger
       MessageText = messageText;
       TimeStamp = timeStamp;
     }
+
+    public override string ToString()
+    {
+      string output = String.Format("{UserName}  {MessageText} {TimeStamp}");
+      return output;
+    }
   }
 }
