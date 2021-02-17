@@ -9,10 +9,20 @@ namespace ConsoleMessenger
   {
     static void Main(string[] args)
     {
-      Message msg = new Message("Rusal","Privet", DateTime.UtcNow);
+      // Тест JSon SerializeObject NewtonSoft
+      Message msg = new Message("RusAl","Privet", DateTime.UtcNow);
       string output = JsonConvert.SerializeObject(msg);
       Message deserializedMsg = JsonConvert.DeserializeObject<Message>(output);
       Console.WriteLine(deserializedMsg);
+
+
+
+      // Create the file.
+      //string path = @"d:\temp\ser.txt";
+      //using (StreamWriter sw = new StreamWriter(path, false, System.Text.Encoding.Default))
+      //{
+      //  sw.WriteLine(output);
+      //}
 
     }
   }
