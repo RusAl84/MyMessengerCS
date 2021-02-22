@@ -29,9 +29,9 @@ namespace Server.Controllers
     }
     // POST api/<Messanger>
     [HttpPost]
-    public void Area(Message value)
+    public void SendMessage([FromBody] Message msg)
     {
-      ListOfMessages.Add(value);
+      ListOfMessages.Add(msg);
       Console.WriteLine(ListOfMessages.Count);
     }
   }

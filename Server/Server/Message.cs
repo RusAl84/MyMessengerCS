@@ -7,9 +7,9 @@ namespace ConsoleMessenger
   [Serializable]
   public class Message
   {
-    public string UserName;
-    public string MessageText;
-    public DateTime TimeStamp;
+    public string UserName { get; set; }
+    public string MessageText { get; set; }
+    public DateTime TimeStamp { get; set; }
 
     public Message()
     {
