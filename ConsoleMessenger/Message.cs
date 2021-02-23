@@ -27,7 +27,7 @@ namespace ConsoleMessenger
 
     public override string ToString()
     {
-      string output = String.Format("{0} {1} {2}", UserName, MessageText, TimeStamp);
+      string output = String.Format("{0} <{2}>: {1}", UserName, MessageText, TimeStamp);
       return output;
     }
   }
