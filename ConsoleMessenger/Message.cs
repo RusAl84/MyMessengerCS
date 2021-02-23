@@ -5,11 +5,18 @@ using System.Text;
 namespace ConsoleMessenger
 {
   [Serializable]
-  class Message
+  public class Message
   {
-    public string UserName;
-    public string MessageText;
-    public DateTime TimeStamp;
+    public string UserName { get; set; }
+    public string MessageText { get; set; }
+    public DateTime TimeStamp { get; set; }
+
+    public Message()
+    {
+      UserName = "System";
+      MessageText = "Server is running";
+      TimeStamp = DateTime.UtcNow;
+    }
 
     public Message(string userName, string messageText, DateTime timeStamp)
     {

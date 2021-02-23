@@ -7,6 +7,7 @@ using System.Collections;
 using ConsoleMessenger;
 using Newtonsoft.Json;
 
+
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace Server.Controllers
@@ -38,7 +39,8 @@ namespace Server.Controllers
       }
       ListOfMessages.Add(msg);
       Console.WriteLine(String.Format("Всего сообщений: {0} Посланное сообщение: {1}", ListOfMessages.Count, msg));
-      return new NoContentResult();
+      //return new NoContentResult();
+      return new OkResult();
     }
   }
 }
