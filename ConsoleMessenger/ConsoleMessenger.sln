@@ -7,11 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleMessenger", "Console
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP Core Server", "..\Server\Server\ASP Core Server.csproj", "{4843B40D-9AD0-4387-AA2E-F2ABB19732F2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9445AAAC-38D8-491A-91E4-4500A2D112AE}"
-	ProjectSection(SolutionItems) = preProject
-		Message.cs = Message.cs
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleMessengerWithGUI", "..\ConsoleMessengerWithGUI\ConsoleMessengerWithGUI.csproj", "{55252F6D-0AFB-46FB-B79A-97590F31CE78}"
 EndProject
 Global
