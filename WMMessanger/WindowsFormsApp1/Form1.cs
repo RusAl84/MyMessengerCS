@@ -29,9 +29,8 @@ namespace WindowsFormsApp1
       if ((UserName.Length > 1) && (UserName.Length > 1))
       {
         ConsoleMessenger.Message msg = new ConsoleMessenger.Message(UserName, Message, DateTime.Now);
-        API.SendMessage(msg);
+        API.SendMessageRestSharp(msg);
       }
-     
     }
 
     private void timer1_Tick(object sender, EventArgs e)

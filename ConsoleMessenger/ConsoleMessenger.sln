@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UWPMessanger", "..\UWPMessanger\UWPMessanger\UWPMessanger.csproj", "{0F579B8A-E849-4DCD-8BF3-9B5042843FEB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMesenger", "..\WpfMesenger\WpfMesenger.csproj", "{AF1F758A-690E-4E9C-9905-505B5F360116}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -138,6 +140,26 @@ Global
 		{0F579B8A-E849-4DCD-8BF3-9B5042843FEB}.Release|x86.ActiveCfg = Release|x86
 		{0F579B8A-E849-4DCD-8BF3-9B5042843FEB}.Release|x86.Build.0 = Release|x86
 		{0F579B8A-E849-4DCD-8BF3-9B5042843FEB}.Release|x86.Deploy.0 = Release|x86
+		{AF1F758A-690E-4E9C-9905-505B5F360116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF1F758A-690E-4E9C-9905-505B5F360116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF1F758A-690E-4E9C-9905-505B5F360116}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{AF1F758A-690E-4E9C-9905-505B5F360116}.Debug|ARM.Build.0 = Debug|Any CPU
+		{AF1F758A-690E-4E9C-9905-505B5F360116}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{AF1F758A-690E-4E9C-9905-505B5F360116}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{AF1F758A-690E-4E9C-9905-505B5F360116}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AF1F758A-690E-4E9C-9905-505B5F360116}.Debug|x64.Build.0 = Debug|Any CPU
+		{AF1F758A-690E-4E9C-9905-505B5F360116}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AF1F758A-690E-4E9C-9905-505B5F360116}.Debug|x86.Build.0 = Debug|Any CPU
+		{AF1F758A-690E-4E9C-9905-505B5F360116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF1F758A-690E-4E9C-9905-505B5F360116}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF1F758A-690E-4E9C-9905-505B5F360116}.Release|ARM.ActiveCfg = Release|Any CPU
+		{AF1F758A-690E-4E9C-9905-505B5F360116}.Release|ARM.Build.0 = Release|Any CPU
+		{AF1F758A-690E-4E9C-9905-505B5F360116}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{AF1F758A-690E-4E9C-9905-505B5F360116}.Release|ARM64.Build.0 = Release|Any CPU
+		{AF1F758A-690E-4E9C-9905-505B5F360116}.Release|x64.ActiveCfg = Release|Any CPU
+		{AF1F758A-690E-4E9C-9905-505B5F360116}.Release|x64.Build.0 = Release|Any CPU
+		{AF1F758A-690E-4E9C-9905-505B5F360116}.Release|x86.ActiveCfg = Release|Any CPU
+		{AF1F758A-690E-4E9C-9905-505B5F360116}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

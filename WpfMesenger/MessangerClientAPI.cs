@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -28,28 +27,26 @@ namespace ConsoleMessenger
       //}
     }
 
-
     public Message GetMessage(int MessageId)
     {
-          WebRequest request = WebRequest.Create("http://localhost:5000/api/Messanger/" + MessageId.ToString());
-          request.Method = "Get";
-          WebResponse response = request.GetResponse();
-          string status = ((HttpWebResponse)response).StatusDescription;
-          //Console.WriteLine(status);
-          Stream dataStream = response.GetResponseStream();
-          StreamReader reader = new StreamReader(dataStream);
-          string responseFromServer = reader.ReadToEnd();
-          //Console.WriteLine(responseFromServer);
-          reader.Close();
-          dataStream.Close();
-          response.Close();
-          if ((status.ToLower() == "ok") && (responseFromServer != "Not found"))
-          {
-            Message deserializedMsg = JsonConvert.DeserializeObject<Message>(responseFromServer);
-            //Console.WriteLine(deserializedMsg);
-            return deserializedMsg;
-          } 
-
+      WebRequest request = WebRequest.Create("http://localhost:5000/api/Messanger/" + MessageId.ToString());
+      request.Method = "Get";
+      WebResponse response = request.GetResponse();
+      string status = ((HttpWebResponse)response).StatusDescription;
+      //Console.WriteLine(status);
+      Stream dataStream = response.GetResponseStream();
+      StreamReader reader = new StreamReader(dataStream);
+      string responseFromServer = reader.ReadToEnd();
+      //Console.WriteLine(responseFromServer);
+      reader.Close();
+      dataStream.Close();
+      response.Close();
+      if ((status.ToLower() == "ok") && (responseFromServer != "Not found"))
+      {
+        Message deserializedMsg = JsonConvert.DeserializeObject<Message>(responseFromServer);
+        //Console.WriteLine(deserializedMsg);
+        return deserializedMsg;
+      }
       return null;
     }
 
@@ -75,41 +72,6 @@ namespace ConsoleMessenger
       dataStream.Close();
       response.Close();
       return true;
-    }
-
-    public bool SendMessageRestSharp(Message msg)
-    {
-      string ServiceUrl = "http://localhost:5000";
-      var client = new RestClient(ServiceUrl);
-
-      var request = new RestRequest("/api/Messanger", Method.POST);
-
-      // Json to post.
-      string jsonToSend = JsonConvert.SerializeObject(msg);
-
-      request.AddParameter("application/json; charset=utf-8", jsonToSend, ParameterType.RequestBody);
-      request.RequestFormat = DataFormat.Json;
-      bool ExitIsTrue = false; 
-      try
-      {
-        client.ExecuteAsync(request, response =>
-        {
-          if (response.StatusCode == HttpStatusCode.OK)
-          {
-            ExitIsTrue = true;
-          }
-          else
-          {
-            ExitIsTrue = false;
-          }
-        });
-      }
-      catch (Exception error)
-      {
-        Console.WriteLine(error);
-      }
-      return true;
-
     }
   }
 }
