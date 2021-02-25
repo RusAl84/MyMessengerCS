@@ -35,14 +35,23 @@ namespace WindowsFormsApp1
 
     private void timer1_Tick(object sender, EventArgs e)
     {
-      ConsoleMessenger.Message msg = API.GetMessage(MessageID);
-      while (msg != null)
+
+      var getMessage = new Func<Task>(async () =>
       {
-        MessagesLB.Items.Add(msg);
-        MessageID++;
-        msg = API.GetMessage(MessageID);
-      }
+        ConsoleMessenger.Message msg = await API.GetMessageHTTPAsync(MessageID);
+        while (msg != null)
+        {
+          MessagesLB.Items.Add(msg);
+          MessageID++;
+          msg = await API.GetMessageHTTPAsync(MessageID);
+        }
+      });
+      getMessage.Invoke();
+
+
     }
+
+
 
     private void Form1_Load(object sender, EventArgs e)
     {

@@ -45,7 +45,7 @@ namespace WindowsFormsApp1
       // 
       // SendBtn
       // 
-      this.SendBtn.Location = new System.Drawing.Point(548, 388);
+      this.SendBtn.Location = new System.Drawing.Point(563, 388);
       this.SendBtn.Name = "SendBtn";
       this.SendBtn.Size = new System.Drawing.Size(122, 73);
       this.SendBtn.TabIndex = 0;
@@ -65,14 +65,14 @@ namespace WindowsFormsApp1
       // 
       // UserNameTB
       // 
-      this.UserNameTB.Location = new System.Drawing.Point(13, 388);
+      this.UserNameTB.Location = new System.Drawing.Point(28, 388);
       this.UserNameTB.Name = "UserNameTB";
       this.UserNameTB.Size = new System.Drawing.Size(279, 22);
       this.UserNameTB.TabIndex = 2;
       // 
       // MessageTB
       // 
-      this.MessageTB.Location = new System.Drawing.Point(13, 439);
+      this.MessageTB.Location = new System.Drawing.Point(28, 439);
       this.MessageTB.Name = "MessageTB";
       this.MessageTB.Size = new System.Drawing.Size(518, 22);
       this.MessageTB.TabIndex = 3;
