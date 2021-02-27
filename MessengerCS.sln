@@ -3,22 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleMessenger", "ConsoleMessenger.csproj", "{24CA1D5A-18DD-4AF0-9072-1A446D1E8F9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP Core Server", "Server\Server\ASP Core Server.csproj", "{4843B40D-9AD0-4387-AA2E-F2ABB19732F2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP Core Server", "..\Server\Server\ASP Core Server.csproj", "{4843B40D-9AD0-4387-AA2E-F2ABB19732F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleMessengerWithGUI", "ConsoleMessengerWithGUI\ConsoleMessengerWithGUI.csproj", "{55252F6D-0AFB-46FB-B79A-97590F31CE78}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleMessengerWithGUI", "..\ConsoleMessengerWithGUI\ConsoleMessengerWithGUI.csproj", "{55252F6D-0AFB-46FB-B79A-97590F31CE78}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsMessenger", "..\WMMessanger\WindowsFormsApp1\WindowsFormsMessenger.csproj", "{63BA07A4-186B-4C2E-8405-117E38B08D16}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsMessenger", "WMMessanger\WindowsFormsApp1\WindowsFormsMessenger.csproj", "{63BA07A4-186B-4C2E-8405-117E38B08D16}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3E1D7994-B10F-4D77-AFB6-3BABDBE04FA8}"
-	ProjectSection(SolutionItems) = preProject
-		..\UWPMessanger\UWPMessanger\UWPMessanger.sln = ..\UWPMessanger\UWPMessanger\UWPMessanger.sln
-	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UWPMessanger", "..\UWPMessanger\UWPMessanger\UWPMessanger.csproj", "{0F579B8A-E849-4DCD-8BF3-9B5042843FEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleMessenger", "ConsoleMessenger\ConsoleMessenger.csproj", "{BB4E0915-B501-4653-BD6E-FDEEA10A006F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMesenger", "..\WpfMesenger\WpfMesenger.csproj", "{AF1F758A-690E-4E9C-9905-505B5F360116}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UWPMessanger", "UWPMessanger\UWPMessanger\UWPMessanger.csproj", "{0F579B8A-E849-4DCD-8BF3-9B5042843FEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfMesenger", "WpfMesenger\WpfMesenger.csproj", "{AF1F758A-690E-4E9C-9905-505B5F360116}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,26 +31,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{24CA1D5A-18DD-4AF0-9072-1A446D1E8F9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{24CA1D5A-18DD-4AF0-9072-1A446D1E8F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{24CA1D5A-18DD-4AF0-9072-1A446D1E8F9E}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{24CA1D5A-18DD-4AF0-9072-1A446D1E8F9E}.Debug|ARM.Build.0 = Debug|Any CPU
-		{24CA1D5A-18DD-4AF0-9072-1A446D1E8F9E}.Debug|ARM64.ActiveCfg = Debug|Any CPU
-		{24CA1D5A-18DD-4AF0-9072-1A446D1E8F9E}.Debug|ARM64.Build.0 = Debug|Any CPU
-		{24CA1D5A-18DD-4AF0-9072-1A446D1E8F9E}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{24CA1D5A-18DD-4AF0-9072-1A446D1E8F9E}.Debug|x64.Build.0 = Debug|Any CPU
-		{24CA1D5A-18DD-4AF0-9072-1A446D1E8F9E}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{24CA1D5A-18DD-4AF0-9072-1A446D1E8F9E}.Debug|x86.Build.0 = Debug|Any CPU
-		{24CA1D5A-18DD-4AF0-9072-1A446D1E8F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{24CA1D5A-18DD-4AF0-9072-1A446D1E8F9E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{24CA1D5A-18DD-4AF0-9072-1A446D1E8F9E}.Release|ARM.ActiveCfg = Release|Any CPU
-		{24CA1D5A-18DD-4AF0-9072-1A446D1E8F9E}.Release|ARM.Build.0 = Release|Any CPU
-		{24CA1D5A-18DD-4AF0-9072-1A446D1E8F9E}.Release|ARM64.ActiveCfg = Release|Any CPU
-		{24CA1D5A-18DD-4AF0-9072-1A446D1E8F9E}.Release|ARM64.Build.0 = Release|Any CPU
-		{24CA1D5A-18DD-4AF0-9072-1A446D1E8F9E}.Release|x64.ActiveCfg = Release|Any CPU
-		{24CA1D5A-18DD-4AF0-9072-1A446D1E8F9E}.Release|x64.Build.0 = Release|Any CPU
-		{24CA1D5A-18DD-4AF0-9072-1A446D1E8F9E}.Release|x86.ActiveCfg = Release|Any CPU
-		{24CA1D5A-18DD-4AF0-9072-1A446D1E8F9E}.Release|x86.Build.0 = Release|Any CPU
 		{4843B40D-9AD0-4387-AA2E-F2ABB19732F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4843B40D-9AD0-4387-AA2E-F2ABB19732F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4843B40D-9AD0-4387-AA2E-F2ABB19732F2}.Debug|ARM.ActiveCfg = Debug|Any CPU
@@ -114,6 +91,26 @@ Global
 		{63BA07A4-186B-4C2E-8405-117E38B08D16}.Release|x64.Build.0 = Release|Any CPU
 		{63BA07A4-186B-4C2E-8405-117E38B08D16}.Release|x86.ActiveCfg = Release|Any CPU
 		{63BA07A4-186B-4C2E-8405-117E38B08D16}.Release|x86.Build.0 = Release|Any CPU
+		{BB4E0915-B501-4653-BD6E-FDEEA10A006F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB4E0915-B501-4653-BD6E-FDEEA10A006F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB4E0915-B501-4653-BD6E-FDEEA10A006F}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{BB4E0915-B501-4653-BD6E-FDEEA10A006F}.Debug|ARM.Build.0 = Debug|Any CPU
+		{BB4E0915-B501-4653-BD6E-FDEEA10A006F}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{BB4E0915-B501-4653-BD6E-FDEEA10A006F}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{BB4E0915-B501-4653-BD6E-FDEEA10A006F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BB4E0915-B501-4653-BD6E-FDEEA10A006F}.Debug|x64.Build.0 = Debug|Any CPU
+		{BB4E0915-B501-4653-BD6E-FDEEA10A006F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BB4E0915-B501-4653-BD6E-FDEEA10A006F}.Debug|x86.Build.0 = Debug|Any CPU
+		{BB4E0915-B501-4653-BD6E-FDEEA10A006F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB4E0915-B501-4653-BD6E-FDEEA10A006F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB4E0915-B501-4653-BD6E-FDEEA10A006F}.Release|ARM.ActiveCfg = Release|Any CPU
+		{BB4E0915-B501-4653-BD6E-FDEEA10A006F}.Release|ARM.Build.0 = Release|Any CPU
+		{BB4E0915-B501-4653-BD6E-FDEEA10A006F}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{BB4E0915-B501-4653-BD6E-FDEEA10A006F}.Release|ARM64.Build.0 = Release|Any CPU
+		{BB4E0915-B501-4653-BD6E-FDEEA10A006F}.Release|x64.ActiveCfg = Release|Any CPU
+		{BB4E0915-B501-4653-BD6E-FDEEA10A006F}.Release|x64.Build.0 = Release|Any CPU
+		{BB4E0915-B501-4653-BD6E-FDEEA10A006F}.Release|x86.ActiveCfg = Release|Any CPU
+		{BB4E0915-B501-4653-BD6E-FDEEA10A006F}.Release|x86.Build.0 = Release|Any CPU
 		{0F579B8A-E849-4DCD-8BF3-9B5042843FEB}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{0F579B8A-E849-4DCD-8BF3-9B5042843FEB}.Debug|ARM.ActiveCfg = Debug|ARM
 		{0F579B8A-E849-4DCD-8BF3-9B5042843FEB}.Debug|ARM.Build.0 = Debug|ARM
