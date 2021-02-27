@@ -14,7 +14,7 @@ namespace ConsoleMessenger
     public Message()
     {
       UserName = "System";
-      MessageText = "Server is running";
+      MessageText = "Server is running...";
       TimeStamp = DateTime.Now;
     }
 
