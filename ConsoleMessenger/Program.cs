@@ -13,6 +13,7 @@ namespace ConsoleMessenger
     private static int MessageID;
     private static string UserName;
     private static MessangerClientAPI API = new MessangerClientAPI();
+
     private static void GetNewMessages()
     {
       Message msg = API.GetMessage(MessageID);
@@ -40,6 +41,5 @@ namespace ConsoleMessenger
         }
       }
     }
-
   }
 }

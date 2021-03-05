@@ -19,7 +19,6 @@ namespace ConsoleMessenger
       Console.WriteLine(output);
       Message deserializedMsg = JsonConvert.DeserializeObject<Message>(output);
       Console.WriteLine(deserializedMsg);
-      // Create the file.
       //string path = @"d:\temp\ser.txt";
       //using (StreamWriter sw = new StreamWriter(path, false, System.Text.Encoding.Default))
       //{
