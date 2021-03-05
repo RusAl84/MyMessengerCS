@@ -14,6 +14,7 @@ namespace Server.Controllers
   public class Messanger : ControllerBase
   {
     static List<Message> ListOfMessages = new List<Message>();
+    
     // GET api/<Messanger>/5
     [HttpGet("{id}")]
     public string Get(int id)
@@ -26,6 +27,7 @@ namespace Server.Controllers
       Console.WriteLine(String.Format("Запрошено сообщение № {0} : {1}", id, OutputString));
       return OutputString;
     }
+    
     // POST api/<Messanger>
     [HttpPost]
     public IActionResult SendMessage([FromBody] Message msg)
