@@ -47,11 +47,7 @@ namespace WindowsFormsApp1
         }
       });
       getMessage.Invoke();
-
-
     }
-
-
 
     private void Form1_Load(object sender, EventArgs e)
     {
