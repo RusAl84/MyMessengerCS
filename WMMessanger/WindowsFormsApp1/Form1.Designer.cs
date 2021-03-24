@@ -55,6 +55,7 @@ namespace WindowsFormsApp1
       // 
       // MessagesLB
       // 
+      this.MessagesLB.ForeColor = System.Drawing.Color.Yellow;
       this.MessagesLB.FormattingEnabled = true;
       this.MessagesLB.ItemHeight = 16;
       this.MessagesLB.Location = new System.Drawing.Point(28, 24);

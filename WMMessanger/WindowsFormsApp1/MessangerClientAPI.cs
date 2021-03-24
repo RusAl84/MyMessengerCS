@@ -133,7 +133,5 @@ namespace ConsoleMessenger
       }
       return ExitIsTrue;
     }
-
-
   }
 }
