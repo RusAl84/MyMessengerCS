@@ -1,20 +1,20 @@
-#Материалы по данному мастер классу и видео традиционно выкладываю в группу: https://vk.com/codelevel
+# Материалы по данному мастер классу и видео традиционно выкладываю в группу: https://vk.com/codelevel
 Одноименный курс на Stepik: https://stepik.org/course/91715/promo
-#Мои контакты
+# Мои контакты
 Русаков Алексей
 vk.com/rusalm   t.me/RusAl84
 Презентация здесь: https://github.com/RusAl84/MyMessengerMasterClass
 
-##Сегодня исходники здесь:
+## Сегодня исходники здесь:
 https://github.com/RusAl84/mAPI - исходный код сервера питон
 https://github.com/RusAl84/mQ - исходный код клиента
 
-##Команды для создания сервера
+## Команды для создания сервера
 Ctrl + Shift + P = Select Interpreter
 python -m venv .venv
 https://python-scripts.com/virtualenv
 pip install Flask Flask-Cors
-##Форамат сообщений
+## Форамат сообщений
 post http://127.0.0.1:5000/mes 
 {
   "MessageText": "Привет",
@@ -22,30 +22,29 @@ post http://127.0.0.1:5000/mes
   "TimeStamp": "12:30"
 }
 get http://localhost:5000/mes/4
-##почитать о технологиях
+## Почитать о технологиях
 https://code.visualstudio.com/
 https://metanit.com/python/tutorial/
 https://pythonworld.ru/
 https://www.python.org/
 
-
-#Команды для создания клиента
-##установка NodeJs
+# Команды для создания клиента
+## Установка NodeJs
 https://nodejs.org/en/
 node -v
-##Если у Вас Windows, то нужно разрешить выполнение сторонних подписанных скриптов,
+## Если у Вас Windows, то нужно разрешить выполнение сторонних подписанных скриптов,
 для этого запустите powerShell под администартором и выполните команду
 Set-ExecutionPolicy RemoteSigned 
-##Установка quasar 
+## Установка quasar 
 npm install -g @quasar/cli 
-##Cоздание проекта quasar                                                                                                                                                                                                                                                                            
+## Cоздание проекта quasar    
 npm init quasar
 quasar dev
-##Почитать о технологиях
+## Почитать о технологиях
 https://metanit.com/web/javascript
 https://quasar.dev/
 https://ru.vuejs.org/
-##Пример верстки и получение данных с бекэнда через библиотеку AXIOS
+## Пример верстки и получение данных с бекэнда через библиотеку AXIOS
 https://jsonplaceholder.typicode.com/guide/
 https://github.com/axios/axios
 https://www.flaticon.com/premium-icon/hedgehog_2658090#
